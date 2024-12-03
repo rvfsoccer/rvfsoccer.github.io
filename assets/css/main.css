@@ -1375,6 +1375,7 @@ input, select, textarea {
 					border-left: 0;
 				}
 
+				
 				#header nav ul li a {
 					display: block;
 					min-width: 7.5rem;
@@ -1395,7 +1396,7 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
 
-		#header nav.use-middle:after {
+		/*#header nav.use-middle:after {
 			content: '';
 			display: block;
 			position: absolute;
@@ -1404,10 +1405,13 @@ input, select, textarea {
 			width: 1px;
 			height: 100%;
 			background: #ffffff;
+		}*/
+		#header nav.use-middle:after {
+			display: none; /* Hides the vertical line */
 		}
 
 		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
+			border-left: solid 1px #ffffff;
 		}
 
 		body.is-article-visible #header {
@@ -1704,3 +1708,5 @@ input, select, textarea {
 .contact-email {
     margin-bottom: 20px; /* Adjust the value as needed */
 }
+
+
